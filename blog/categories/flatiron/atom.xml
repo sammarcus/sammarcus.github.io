@@ -4,7 +4,7 @@
   <title><![CDATA[Category: flatiron | Beep Boop Bop]]></title>
   <link href="http://sammarcus.github.io/blog/categories/flatiron/atom.xml" rel="self"/>
   <link href="http://sammarcus.github.io/"/>
-  <updated>2014-11-06T15:08:23-05:00</updated>
+  <updated>2014-11-10T09:56:19-05:00</updated>
   <id>http://sammarcus.github.io/</id>
   <author>
     <name><![CDATA[Sam Marcus]]></name>
@@ -18,7 +18,7 @@
     <link href="http://sammarcus.github.io/blog/2014/11/06/mvc-is-the-mvp/"/>
     <updated>2014-11-06T14:52:51-05:00</updated>
     <id>http://sammarcus.github.io/blog/2014/11/06/mvc-is-the-mvp</id>
-    <content type="html"><![CDATA[<p align="center"><img src="https://dl-web.dropbox.com/get/Apps/GIFwrapped/4c95c8fa6112bbafb1b4604bb8e61069.gif?_subject_uid=335000505&amp;w=AACLByo6Rp8NWv_dlv1_9Y4PKgkSXIsU-lbuWozBqBw8ng" alt="Jake" /></p>
+    <content type="html"><![CDATA[<p align="center"><img src="http://i.imgur.com/3LntWLt.gif" alt="Jake" /></p>
 
 <p> We were originally introduced to the Model, View and Controller concept, or MVC, 2 weeks ago when we started SQL and Active Record. Knowledge often flies very fast here and it can be difficult to ascertain what we’ll definitely need to grasp and other ideas that we may be able to lookup and reference later. When MVC stuck around in Rails I knew it was something worth spending the time to get to know. When I knew I needed to tweak something but didn’t know exactly where to do it, I would furiously toggle between all three and try to play a guessing game. Highly ineffective.</p>
 
@@ -53,7 +53,9 @@
 
 <p><br /></p>
 
-<p align="center"><img src="https://dl-web.dropbox.com/get/Apps/GIFwrapped/790bf421fe0c73080ce502ab18a3670e.gif?_subject_uid=335000505&amp;w=AABSx5V1CrZo5erZ6yDsZ77S8vwpoxHhe_rE1aLgccm1nA" alt="Sleep" /></p>
+<p align="center"><img src="http://i.imgur.com/DyV6q7u.gif" alt="Sleep" /></p>
+
+<p>(revised 11-10-14)</p>
 ]]></content>
   </entry>
   
