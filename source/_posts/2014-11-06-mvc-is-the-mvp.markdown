@@ -6,7 +6,7 @@ comments: true
 categories: Flatiron School
 ---
 
-<p align="center"><img src="https://dl-web.dropbox.com/get/Apps/GIFwrapped/4c95c8fa6112bbafb1b4604bb8e61069.gif?_subject_uid=335000505&w=AACLByo6Rp8NWv_dlv1_9Y4PKgkSXIsU-lbuWozBqBw8ng" alt="Jake" /></p>
+<p align="center"><img src="http://i.imgur.com/3LntWLt.gif" alt="Jake" /></p>
 
  We were originally introduced to the Model, View and Controller concept, or MVC, 2 weeks ago when we started SQL and Active Record. Knowledge often flies very fast here and it can be difficult to ascertain what we’ll definitely need to grasp and other ideas that we may be able to lookup and reference later. When MVC stuck around in Rails I knew it was something worth spending the time to get to know. When I knew I needed to tweak something but didn't know exactly where to do it, I would furiously toggle between all three and try to play a guessing game. Highly ineffective.
 
@@ -51,4 +51,6 @@ There’s no one right way to draw the diagram, but there are many wrong ways to
 
 <br>
 
-<p align="center"><img src="https://dl-web.dropbox.com/get/Apps/GIFwrapped/790bf421fe0c73080ce502ab18a3670e.gif?_subject_uid=335000505&w=AABSx5V1CrZo5erZ6yDsZ77S8vwpoxHhe_rE1aLgccm1nA" alt="Sleep" /></p>
+<p align="center"><img src="http://i.imgur.com/DyV6q7u.gif" alt="Sleep" /></p>
+
+(revised 11-10-14)
