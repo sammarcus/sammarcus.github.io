@@ -4,7 +4,7 @@
   <title><![CDATA[Beep Boop Bop]]></title>
   <link href="http://sammarcus.github.io/atom.xml" rel="self"/>
   <link href="http://sammarcus.github.io/"/>
-  <updated>2014-12-09T09:41:29-05:00</updated>
+  <updated>2014-12-09T16:37:20-05:00</updated>
   <id>http://sammarcus.github.io/</id>
   <author>
     <name><![CDATA[Sam Marcus]]></name>
@@ -26,7 +26,7 @@
 
 <p>If you want to leverage an external service to interface with a function you are building yourself, OAuth is a great start. But you’ll still need to handle all your users yourself, and simply tack that extra token on should you choose to use it for anything else.It is one less thing you have to do in managing user authentication, but there are still a dozen things left to do before you’re done. The Devise gem is a great way to assist in the complexities of securely managing these relationships beyond OAuth.</p>
 
-<p>Alas, nothing is every easy. Twitter was a relatively straightforward example, but the road was a bit bumpier when we tried to kick it into high gear with Uber (double pun intended).</p>
+<p>Alas, nothing is very easy. Twitter was a relatively straightforward example, but the road was a bit bumpier when we tried to kick it into high gear with Uber (double pun intended).</p>
 
 <p>(•_•)</p>
 
