@@ -1,0 +1,116 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta charset="utf-8">
+	<title>OmniAuth and Users | Beep Boop Bop</title>
+
+	<meta name="author" content="Sam Marcus">
+	
+	<meta name="description" content="Beep Boop Bop 09 Dec 2014 OmniAuth and Users OAuth is really cool. Not exactly a groundbreaking statement, but there are many things I have come to &hellip;">
+
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link href="/atom.xml" rel="alternate" title="Beep Boop Bop" type="application/atom+xml">
+	<link rel="canonical" href="">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:700,400" />
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body class="post-template">
+  <main class="content" role="main"><article class="post">
+  
+	<header class="post-header">
+		<a id="blog-logo" href="/">Beep Boop Bop</a>
+	</header>
+	<span class="post-meta">09 Dec 2014</span>
+	<h1 class="post-title">OmniAuth and Users</h1>
+
+	<section class="post-content">
+		<p align="center"><img src="http://cl.ly/image/2C1l2U0W1G2o/omniauth.png" alt="endpoints" /></p>
+
+<p>OAuth is really cool. Not exactly a groundbreaking statement, but there are many things I have come to appreciate even more now that I have a deeper sense of how they work. When I was first truly putting it to the test in my first project, Identity Crisis, I had a hard time grasping the difference between as merely authorizing a user and the necessity, should your needs require it, to create a mechanism to also have users on your site as well.</p>
+
+<p>OAuth is merely a means to reliably verify someone’s identity on an external service. That’s it. What it’s not is a total solution to facilitate users on you app and manage permissions and control passwords and handle tables and reset forgotten usernames because you don’t need to worry about it because Twitter has it taken care of and everything is easy peazy breazy because OAuth has got it under control. Aha. It is not.</p>
+
+<p>If you want to leverage an external service to interface with a function you are building yourself, OAuth is a great start. But you’ll still need to handle all your users yourself, and simply tack that extra token on should you choose to use it for anything else.It is one less thing you have to do in managing user authentication, but there are still a dozen things left to do before you’re done. The Devise gem is a great way to assist in the complexities of securely managing these relationships beyond OAuth.</p>
+
+<p>Alas, nothing is every easy. Twitter was a relatively straightforward example, but the road was a bit bumpier when we tried to kick it into high gear with Uber (double pun intended).</p>
+
+<p>(•_•)</p>
+
+<p>( •_•)&gt;⌐■-■</p>
+
+<p>(⌐■_■)</p>
+
+<p>Knowing we wanted to build something socially powerful enough to move humans around together, Uber was an easy choice when it came to transportation providers. Their service is reliable, the API is robust, the cars were speedy and everything looked like sunny blue sky were ahead. To be clear, OAuth is not an API. OAuth (Open Authorization) has become an extremely common way to access walled APIs, but should not be referred to as an API itself. Basic terminology.</p>
+
+<p>After dipping our toes in the RESTful waters we dove into the deep end to try to finagle Uber to serve us up a fresh token for my user account. It felt a little bit like we were going down a dark tunnel with no flashlight, so I relied on the Mac app Paw to familiarize myself with the raw traffic we were sending. It was also really helpful since it parsed JSON all in one swoop. We ended up using the OmniAuth gem, which includes basic OAuth strategies all under one roof. Once we finally landed on the correct params to send over (all over HTTPS, of course, because you already knew that you have to force Heroku to interact securely and not spend an hour panicking that the whole service strategy has to be scrapped), we got our token through redirect and stashed it aside for safekeeping. Yep, that’s right. We just used that as a means to log into our app. This way we never ask for a password! Uber can handle that drama. Thanks Uber.</p>
+
+<p align="center"><img src="http://cl.ly/image/3L1S2B1i122H/Image%202014-12-09%20at%209.40.11%20AM.png" alt="screenshot" /></p>
+
+<p> So now that we know WHO they are through a means of a token, and we know WHAT they are since we have them as a user through Devise, we can make snazzy requests on their behalf. Whoop whoop. Because they granted us permission through OAuth, we have some capability to act on their behalf and can perform actions that Uber has scoped us with the appropriate permission to do so. More on those difficulties in round 2.</p>
+
+	</section>
+
+  <footer class="post-footer">
+  <section class="author">
+    <h4>Sam Marcus</h4>
+    <p></p>
+  </section>
+  <section class="share">
+    <h4>Share this post</h4>
+    <a class="icon-twitter" href="http://twitter.com/share?text=OmniAuth and Users&amp;url=http://sammarcus.github.io/blog/2014/12/09/omniauth-and-users/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+    </a>
+    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://sammarcus.github.io/blog/2014/12/09/omniauth-and-users/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+    </a>
+    <a class="icon-google-plus" href="https://plus.google.com/share?url=http://sammarcus.github.io/blog/2014/12/09/omniauth-and-users/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+    </a>
+  </section>
+</footer>
+  <hr>
+  
+    <div class="share">
+</div>
+
+  
+  
+</article></main>
+  <footer class="site-footer"><a class="subscribe icon-feed" href="http://sammarcus.github.io/atom.xml"><span class="tooltip">Subscribe!</span></a>
+
+
+<div class="inner">
+
+
+
+
+
+
+
+
+
+<section class="copyright">All content copyright <a href="/">Sam Marcus</a> © 2014 • All rights reserved.</section>
+
+<section class="poweredby">Casper theme by <a class="icon-ghost" href="http://tryghost.org">Ghost</a> &amp; Published with <a href="http://octopress.org">Octopress</a></section>
+
+</div>
+</footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="//yandex.st/highlightjs/7.3/highlight.min.js"></script>  
+<script>hljs.initHighlightingOnLoad()</script>
+
+
+
+
+
+</body>
+</html>
